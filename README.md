@@ -17,7 +17,7 @@ If you are uncertain about **the style of your code writing**, take a look at th
 
 ## Data
 
-For the Exercise 5 we will use NOAA weather data obtained from [here](https://www.ncdc.noaa.gov/cdo-web/search?datasetid=GHCND)
+For the Exercise 5 we will use NOAA weather data obtained from [here](https://www7.ncdc.noaa.gov/CDO/cdoselect.cmd)
 (file format was converted to CSV for convenience). You should [download the datafile](6153237444115dat.csv) into your own computer to do the
 data analysis on it:
  - (from the [following page](https://github.com/Geo-Python-2017/Exercise-5/blob/master/6153237444115dat.csv) --> right click **Download** -button --> Save Link As ..).
