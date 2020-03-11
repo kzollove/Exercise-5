@@ -42,3 +42,33 @@ selected['Celsius'] = selected['Celsius'].round(0)
 
 #convert celsius to integers
 selected['Celsius'] = selected['Celsius'].astype(int)
+
+
+
+
+###### Problem 3 #######
+
+# Divide the selection into two separate datasets:
+# Select all rows from selected DataFrame into variable called kumpula where the USAF code is 29980
+# Select all rows from selected DataFrame into variable called rovaniemi where the USAF code is 28450
+kumpula = selected.ix[selected['USAF'] == 29980]
+rovaniemi = selected.ix[selected['USAF'] == 28450]
+
+print(kumpula.head(), rovaniemi.head())
+
+# Save kumpula DataFrame into Kumpula_temps_May_Aug_2017.csv file (CSV format)
+# separate the columns with ,
+# use only 2 decimals in the floating point numbers
+output_kumpula = "Kumpula_temps_May_Aug_2017.csv"
+kumpula.to_csv(output_kumpula, sep=',', index=False, float_format="%.2f")
+
+# Save rovaniemi DataFrame into Rovaniemi_temps_May_Aug_2017.csv file (CSV format)
+# separate the columns with ,
+# use only 2 decimals in the floating point numbers
+output_rovaniemi = "Rovaniemi_temps_May_Aug_2017.csv"
+rovaniemi.to_csv(output_rovaniemi, sep=',', index=False, float_format="%.2f")
+
+
+
+
+###### Problem 4 #######
