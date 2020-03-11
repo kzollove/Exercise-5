@@ -8,7 +8,7 @@ data = pd.read_csv('./6153237444115dat.csv', na_values=['*', '**', '***', '****'
 print('Number rows: ', data.index)
 
 #What are the column names?
-print('Column names: ',data.columns)
+print('Column names: ', data.columns)
 
 #Datatypes of columns? 
 print(data.dtypes)
